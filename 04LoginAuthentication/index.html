@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container" id="homeBox">
+        <h2>Welcome</h2>
+        <button onclick="showRegister()">📝 Register</button>
+        <button onclick="showLogin()">🔑 Login</button>
+    </div>
+    <div class="container" id="registerForm">
+        <h2>Register</h2>
+        <input type="text" id="regUser" placeholder="Enter Username"><br>
+        <input type="password" id="regPass" placeholder="Enter Passowrd"><br>
+        <button onclick="register()">Register</button>
+        <button onclick="goHome()">⬅ Back</button>
+    </div>
+
+
+    <div class="container" id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="logUser" placeholder="Enter Username"><br>
+        <input type="password" id="logPass" placeholder="Enter Password"><br>
+        <button onclick="login()">Login</button>
+        <button onclick="goHome()">⬅ Back</button>
+    </div>
+
+    <div class="container" id="securedPage">
+        <h2>🔒 Secured Page</h2>
+        <p>Welcoms <span id="userDisplay"></span>! You have accessed private content. </p>
+        <button onclick="logout()">Logout</button>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+<!-- <script src="main.js"></script> -->
+</html>
